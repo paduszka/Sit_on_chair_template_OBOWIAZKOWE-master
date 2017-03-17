@@ -1,0 +1,113 @@
+*{
+  font-family: Raleway, Arial, sans-serif ;
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+}
+
+span {
+  color: rgb(39,199,171);
+}
+
+.container{
+  max-width: 1050px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.container::after{
+  clear: both;
+  content: '';
+  display: block;
+}
+
+header{
+  background-color: black;
+  height: 60px;
+}
+
+header .container{
+  height: 30px;
+  padding-top: 20px;
+}
+
+.headerLogo{
+  color: white;
+  float: left;
+}
+
+.headerMenu{
+  color: white;
+
+}
+
+.headerMenu ul {
+  list-style: none;
+  margin-top: 0;
+  right: 0;
+  float: right;
+}
+
+.headerMenu ul li{
+  padding-left: 35px;
+  display: inline-block;
+}
+
+.welcome{
+
+}
+
+.blackChair{
+  float: left;
+}
+
+.welcomeText{
+  text-align: center;
+  padding: 65px;
+}
+
+.welcomeText h1{
+  margin-bottom: 20px;
+}
+
+.welcomeText p{
+  margin-bottom: 20px;
+}
+
+#buttonSeeMore{
+  width: 300px;
+  height: 50px;
+  color: white;
+  background-color: rgb(39,199,171);
+  border: none;
+  border-radius: 10%;
+}
+
+.galery{
+  background-color: white;
+  height: 350px;
+}
+
+.box{
+  width: 33%;
+  height: 225px;
+  background-color: black;
+}
+
+.welcome{
+  background-color: white;
+  height: 504px;
+}
+
+.priceList{
+  background-color:rbg(241,241,241);
+  height: 504px;
+}
+
+
+
+.contactUs{
+  background-color:rbg(241,241,241);
+  height: 130px;
+}

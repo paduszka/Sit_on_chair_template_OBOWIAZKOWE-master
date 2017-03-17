@@ -1,12 +1,22 @@
 *{
   font-family: Raleway, Arial, sans-serif ;
   padding: 0;
-  margin: 0;
   margin: 0 auto;
 }
 
 span {
   color: rgb(39,199,171);
+}
+
+b{
+
+}
+
+.greenline{
+  width: 20px;
+  height: 20px;
+  color: rgb(39,199,171);
+  border-bottom:
 }
 
 .container{
@@ -39,7 +49,6 @@ header .container{
 
 .headerMenu{
   color: white;
-
 }
 
 .headerMenu ul {
@@ -54,17 +63,60 @@ header .container{
   display: inline-block;
 }
 
+
 .welcome{
+  background: rgba(254,254,254,1);
+background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 75%, rgba(226,226,226,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(75%, rgba(254,254,254,1)), color-stop(100%, rgba(226,226,226,1)));
+background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 75%, rgba(226,226,226,1) 100%);
+background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 75%, rgba(226,226,226,1) 100%);
+background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 75%, rgba(226,226,226,1) 100%);
+background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 75%, rgba(226,226,226,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0 );
+  background-color: white;
+  height: 400px;
+}
+
+.welcome .container{
+  max-width: 1050px;
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+.arrowLeft{
+  width: 10px;
+  float: left;
+  padding-top: 120px;
+}
+
+.arrowRight{
+  float: right;
+  width: 10px;
+  display: inline-block;
+  padding-top: 120px;
+}
+
+.arrow h1{
+  font-size: 60px;
+  color: rgb(39,199,171);
 
 }
 
 .blackChair{
+  background-image: url('../images/');
   float: left;
+  width: 80px;
+  display: inline-block;
+  padding-right: 200px;
+
 }
 
 .welcomeText{
   text-align: center;
   padding: 65px;
+  width: 460px;
+  display: inline-block;
+  padding-left: 200px;
 }
 
 .welcomeText h1{
@@ -73,6 +125,7 @@ header .container{
 
 .welcomeText p{
   margin-bottom: 20px;
+  line-height: 25px;
 }
 
 #buttonSeeMore{
@@ -81,7 +134,8 @@ header .container{
   color: white;
   background-color: rgb(39,199,171);
   border: none;
-  border-radius: 10%;
+  border-radius: 10px;
+  font-size: 14px;
 }
 
 .galery{
@@ -89,25 +143,212 @@ header .container{
   height: 350px;
 }
 
-.box{
-  width: 33%;
-  height: 225px;
-  background-color: black;
+.galery .container{
+  padding: 40px;
 }
 
-.welcome{
-  background-color: white;
-  height: 504px;
+.box{
+  width: 30%;
+  height: 225px;
+  border: 1px solid gray;
+  display: inline-block;
+  float: left;
+  margin-right: 50px;
+  box-sizing: border-box;
+}
+
+.box:last-child{
+  margin-right: 0px;
+  float: right;
+}
+
+.boxOne{
+  background-image: url('../images/box1_img.jpg');
+}
+
+.boxTwo{
+  background-image: url('../images/box2_img.jpg');
+}
+
+.boxThree{
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.boxThree p{
+  padding-bottom: 8px;
 }
 
 .priceList{
-  background-color:rbg(241,241,241);
-  height: 504px;
+  background-color: rgb(241,241,241);
+  height: 725px;
 }
 
+.cennik{
+  padding: 30px 0 0 0;
+  border-bottom: 3px solid black;
+  border-color: rgb(39,199,171);
+}
 
+.offer{
+  height: 400px;
+  width: 325px;
+  background-color: rgb(249,249,249);
+  margin-top: 50px;
+}
+
+.offer1{
+  float: left;
+  margin-right: 40px;
+}
+
+.offer2{
+  float: left;
+}
+
+.offer3{
+  float: right;
+}
 
 .contactUs{
-  background-color:rbg(241,241,241);
-  height: 130px;
+  background-color: white;
+  height: 430px;
+  padding: 20px 40px;
+}
+
+.contactUs .container{
+  position: relative;
+}
+
+.contact{
+  padding: 30px 0 0 0;
+  width: 450px;
+  float: left;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 60px;
+}
+
+.contact p{
+  float: left;
+  width: 34%;
+  border-bottom: 3px solid;
+  border-color: rgb(39,199,171);
+}
+
+.contactForm{
+  float: left;
+  padding-top: 30px;
+  color: rgb(241,241,241);
+  display: inline-block;
+  position: absolute;
+  top: 60px;;
+  left: 60px;
+}
+
+#name {
+  width: 100%;
+  height: 40px;
+  border: 2px solid rgb(241,241,241);
+  font-size: 20px;
+  color: rgb(241,241,241);
+}
+
+#email {
+  width: 100%;
+  height: 40px;
+  border: 2px solid rgb(241,241,241);
+  font-size: 20px;
+  color: rgb(241,241,241);
+}
+
+#message {
+  width: 100%;
+  height: 190px;
+  border: 2px solid rgb(241,241,241);
+  border-color: rgb(241,241,241);
+  font-size: 20px;
+  color: rgb(241,241,241);
+}
+
+.sendButtonSection{
+  float: right;
+  width: 400px;
+  position: absolute;
+  top: 60px;
+  right: 60px;
+}
+
+#redChair{
+  margin-left: 80px;
+}
+
+#checkbox{
+  border: 1px solid grey;
+  margin-left: 20px;
+  float: left;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.agreement{
+  float: right;
+  height: 40px;
+  float: right;
+  padding: 20px 0;
+}
+
+.agreementOk{
+  font-size: 14px;
+}
+
+#send{
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: rgb(39,199,171);
+  border: none;
+  border-radius: 10px;;
+  font-size: 20px;
+  margin: 20px;
+}
+
+footer{
+  background-color: white;
+  height: 100px;
+  display: inline block;
+}
+
+footer.container{
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.copyrights{
+  width: 50%;
+  float: left;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.socialMedia{
+  width: 25%;
+  float: left;
+  display: inline-block;
+  position: absolute;
+  right: 170px;
+
+}
+
+.footerLogo{
+  width: 25%;
+  height: 100px;
+  float: right;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.footerLogo p{
+  text-align: right;
 }

@@ -12,11 +12,11 @@ b{
 
 }
 
-.greenline{
-  width: 20px;
-  height: 20px;
-  color: rgb(39,199,171);
-  border-bottom:
+.greenLine{
+  width: 30%;
+  height: 5px;
+  background-color: rgb(39,199,171);
+  float: left;
 }
 
 .container{
@@ -175,39 +175,217 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
   box-sizing: border-box;
 }
 
+.boxThree .greenLine{
+  width: 50%;
+}
+
 .boxThree p{
   padding-bottom: 8px;
 }
 
 .priceList{
   background-color: rgb(241,241,241);
-  height: 725px;
+  height: 625px;
 }
 
 .cennik{
   padding: 30px 0 0 0;
-  border-bottom: 3px solid black;
-  border-color: rgb(39,199,171);
 }
 
 .offer{
-  height: 400px;
+  height: 450px;
   width: 325px;
   background-color: rgb(249,249,249);
   margin-top: 50px;
+  border: 3px solid red;
+  border-color: rgb(194, 194, 194);
+  position: relative;
+}
+
+.offer2 .plan{
+  color: rgb(255,255,255);
+}
+
+.offer .plan{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .offer1{
   float: left;
-  margin-right: 40px;
+  margin-right: 28px;
 }
 
 .offer2{
   float: left;
+  border-color: rgb(39,199,171);
 }
 
 .offer3{
   float: right;
+}
+
+.dot{
+  position: absolute;
+  left: 135px;
+  top: -35px;
+}
+
+.bigDot{
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 50%;
+  border-color: rgb(194, 194, 194);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.smallDot{
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  border-color: rgb(194, 194, 194);
+  background-color: rgb(194, 194, 194);
+  position: absolute;
+  top: 12.5px;
+  left: 12.5px;
+}
+
+.offer2 .bigDot{
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 50%;
+  border-color: rgb(39,199,171);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.offer2 .smallDot{
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  border-color: rgb(39,199,171);
+  background-color: rgb(39,199,171);
+  position: absolute;
+  top: 12.5px;
+  left: 12.5px;
+}
+
+.circle{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+  color: rgb(194,194,194);
+  border-color: rgb(194,194,194);
+}
+
+.numberWithCents{
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.offer2 .circle .numberWithCents{
+  padding-top: 20px;
+}
+
+.numberWithCents h1{
+  float: left;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.numberWithCents p{
+  float: left;
+  display: inline-block;
+}
+
+.cents{
+    position: absolute;
+    font-size: 11px;
+}
+
+.time {
+  text-align: center;
+}
+
+.line{
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  color: rgb(158,158,158);
+
+}
+
+.offer1 .line1{
+  background-color: rgb(228,228,228);
+  margin-top: 30px;
+}
+
+.offer1 .line2{
+  background-color: rgb(241,241,241);
+}
+
+.offer2 .line1 {
+  background-color: rgb(255,255,255);
+  margin-top: 30px;
+}
+
+.offer2 .line3{
+  background-color: rgb(255,255,255);
+}
+
+.offer2 .line2{
+  background-color: rgb(241,241,241);
+}
+
+.offer3 .line2, .line4{
+  background-color: rgb(241,241,241);
+}
+
+.offer3 .line1, .line3{
+  background-color: rgb(228,228,228);
+}
+
+.offer3 .line1{
+margin-top: 30px;
+}
+
+.offer2{
+  background-color: rgb(39,199,171);
+}
+
+.offer2 .circle{
+  background-color: rgb(249,249,249);
+  color: rgb(39,199,171);
+  border: none;
+}
+
+
+#join{
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: rgb(39,199,171);
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  float: left;
+  margin-left: 110px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.offer2 #join{
+  background-color: rgb(255, 255, 255);
+  color: rgb(39,199,171);
 }
 
 .contactUs{
@@ -221,20 +399,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 }
 
 .contact{
-  padding: 30px 0 0 0;
-  width: 450px;
-  float: left;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 60px;
+    padding: 30px 0 0 0;
+  }
 }
 
 .contact p{
   float: left;
   width: 34%;
-  border-bottom: 3px solid;
-  border-color: rgb(39,199,171);
 }
 
 .contactForm{

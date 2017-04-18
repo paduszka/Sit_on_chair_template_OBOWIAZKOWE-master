@@ -49,6 +49,7 @@ header .container{
 
 .headerMenu{
   color: white;
+  position: relative;
 }
 
 .headerMenu ul {
@@ -56,6 +57,7 @@ header .container{
   margin-top: 0;
   right: 0;
   float: right;
+
 }
 
 .headerMenu ul li{
@@ -63,8 +65,33 @@ header .container{
   display: inline-block;
 }
 
+.rolled {
+	display: none;
+	position: absolute;
+	left: 600px;
+	top: 40px;
+	width: 180px;
+	background-color: black;
+	list-style-type: none;
+}
 
-.welcome{
+.rollded::before {
+	content: "";
+	position: absolute;
+	right: 300px;
+	top: 40px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+	border-bottom: 10px solid black;
+}
+
+.rolled li {
+	padding: 5px 15px;
+}
+
+.slider {
   background: rgba(254,254,254,1);
 background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 75%, rgba(226,226,226,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(75%, rgba(254,254,254,1)), color-stop(100%, rgba(226,226,226,1)));
@@ -77,7 +104,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
   height: 400px;
 }
 
-.welcome .container{
+.slider .container .productImages {
+     width: 40%;
+     height: 100%;
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     position: relative;
+  }
+
+.slider .container .productImages li {
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       visibility: hidden;
+}
+
+.slider .container {
   max-width: 1050px;
   padding: 40px;
   padding-bottom: 0;
@@ -99,31 +142,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .arrow h1{
   font-size: 60px;
   color: rgb(39,199,171);
-
 }
 
-.blackChair{
-  background-image: url('../images/');
-  float: left;
-  width: 80px;
+#photo1 {
+  width: 280px;
+  height: 300px;
+  background-image: url('../images/black_chair.png');
   display: inline-block;
   padding-right: 200px;
-
+  float: left;
 }
 
-.welcomeText{
+#photo2 {
+  width: 280px;
+  height: 300px;
+  background-image: url('../images/black_chair.png');
+  display: inline-block;
+  padding-right: 200px;
+  float: left;
+}
+
+#photo3 {
+  width: 280px;
+  height: 300px;
+  background-image: url('../images/black_chair.png');
+  display: inline-block;
+  padding-right: 200px;
+  float: left;
+}
+
+.sliderText{
   text-align: center;
   padding: 65px;
   width: 460px;
   display: inline-block;
-  padding-left: 200px;
+  padding-left: 400px;
 }
 
-.welcomeText h1{
+.sliderText h1{
   margin-bottom: 20px;
 }
 
-.welcomeText p{
+.sliderText p{
   margin-bottom: 20px;
   line-height: 25px;
 }
@@ -138,7 +198,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
   font-size: 14px;
 }
 
-.galery{
+.visible {
+  visibility: visible !important; }
+
+.hidden {
+  visibility: hidden !important; }
+
+.galery {
   background-color: white;
   height: 350px;
 }
@@ -147,7 +213,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
   padding: 40px;
 }
 
-.box{
+.box {
   width: 30%;
   height: 225px;
   border: 1px solid gray;
@@ -157,20 +223,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
   box-sizing: border-box;
 }
 
-.box:last-child{
+.box:last-child {
   margin-right: 0px;
   float: right;
 }
 
-.boxOne{
+.boxOne {
   background-image: url('../images/box1_img.jpg');
 }
 
-.boxTwo{
+.boxTwo {
   background-image: url('../images/box2_img.jpg');
 }
 
-.boxThree{
+.boxThree {
   padding: 20px;
   box-sizing: border-box;
 }
@@ -179,8 +245,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
   width: 50%;
 }
 
-.boxThree p{
+.boxThree p {
   padding-bottom: 8px;
+}
+
+.transparentBack {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 150px;
+  display: block;
+}
+
+.transparentBack p {
+  margin-left: 10px;
+  padding-top: 10px;
 }
 
 .priceList{

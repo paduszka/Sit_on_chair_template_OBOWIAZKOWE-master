@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sit on our chair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="js/app.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="headerLogo">
+        SIT<span>ON</span>CHAIR
+        </div>
+      <div class="headerMenu">
+        <ul>
+          <li>O FIRMIE</li>
+            <ul class="rolled">
+                <li>AKTUALNOŚCI</li>
+                <li>NASZ TEAM</li>
+                <li>HISTORIA</li>
+            </ul>
+          <li>GALERIA</li>
+          <ul class="rolled">
+              <li>DREWNIANE</li>
+              <li>OBICIE MATERIAŁ</li>
+              <li>TARGI</li>
+          </ul>
+          <li>KONTAKT</li>
+          <ul class="rolled">
+              <li>EMAIL</li>
+              <li>MAPA DOJAZDU</li>
+              <li>NAPISZ DO NAS</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="slider">
+    <div class="container">
+      <div class="arrow arrowLeft"><h1><</h1></div>
+        <ul class="productImages">
+          <li><div id="photo1"></div></li>
+          <li><div id="photo2"></div></li>
+          <li><div id="photo3"></div></li>
+        </ul>
+        <div class="sliderText">
+          <h1>SIT <span>ON </span> OUR <span>CHAIR</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus tincidunt massa, vel auctor purus fermentum vitae. Etiam lobortis egestas egestas.</p>
+          <input type="submit" id="buttonSeeMore" value="ZOBACZ WIĘCEJ"/>
+        </div>
+        <div class="arrow arrowRight"><h1>></h1>
+        </div>
+    </div>
+  </section>
+
+  <section class="galery">
+    <div class="container">
+      <div class="box boxOne">
+        <div class="transparentBack">
+        <p>
+          <b>
+          Chair CLAIR
+          </b>
+        </p>
+        <div class="greenLine"></div><div class="greenLine"></div>
+      </div>
+    </div>
+      <div class="box boxTwo">
+        <div class="transparentBack">
+        <p>
+          <b>
+          Chair MARGARITA
+          <div class="greenLine"></div><div class="greenLine"></div>
+          </b>
+        </p>
+      </div>
+    </div>
+      <div class="box boxThree">
+        <p><b>Finds all inputs</b></p>
+        <div class="greenLine"></div>
+        <br>
+        <p>Finds all inputs that are not checked and highlghts the next sibling span. </p>
+        <p>Notice there is no change when cliking the checkboxes since no click events have been made.</p>
+      </div>
+    </div>
+
+  </section>
+  <section class="priceList">
+    <div class="container">
+        <div class="cennik">CENNIK</div>
+        <div class="greenLine"></div>
+        <br>
+        <div class="offer offer1">
+          <div class="dot">
+            <div class="bigDot">
+              <div class="smallDot">
+              </div>
+            </div>
+          </div>
+          <h3 class="plan"><span>BASIC PLAN</span></h3>
+          <div class="circle">
+            <div class="numberWithCents">
+            <h1>85</h1><p class="cents">99</p>
+              </div>
+            <p class="time">PLN/MSC</p>
+          </div>
+          <div class="lineContainer">
+          <div class="line line1">
+            Zakup towaru + dowóz
+          </div>
+          <div class="line line2">
+            Serwis
+          </div>
+        </div>
+          <input type="submit" id="join" value="DOŁĄCZ"/>
+        </div>
+
+        <div class="offer offer2">
+          <div class="dot">
+            <div class="bigDot">
+              <div class="smallDot">
+              </div>
+            </div>
+          </div>
+          <h3 class="plan">STANDARD</h3>
+          <div class="circle">
+            <div class="numberWithCents">
+            <h1><span>95</span></h1><p class="cents"><span>99</span></p>
+            </div>
+            <p class="time"><span>PLN/MSC</span></p>
+          </div>
+          <div class="lineContainer">
+            <div class="line line1">
+            Zakup towaru + dowóz
+            </div>
+            <div class="line line2">
+            Serwis
+            </div>
+            <div class="line line3">
+            Gwarancja 5 lat
+            </div>
+          </div>
+          <input type="submit" id="join" value="DOŁĄCZ"/>
+        </div>
+
+        <div class="offer offer3">
+          <div class="dot">
+            <div class="bigDot">
+              <div class="smallDot">
+              </div>
+            </div>
+          </div>
+          <h3 class="plan"><span>ADVANCE PLAN</span></h3>
+          <div class="circle">
+            <div class="numberWithCents">
+            <h1>211</h1><p class="cents">00</p>
+            </div>
+            <p class="time">PLN/MSC</p>
+          </div>
+          <div class="lineContainer">
+            <div class="line line1">
+              Zakup towaru + dowóz
+            </div>
+            <div class="line line2">
+              Serwis
+            </div>
+            <div class="line line3">
+              Gwarancja 5 lat
+            </div>
+            <div class="line line4">
+              Porady projektanta
+            </div>
+          </div>
+            <input type="submit" id="join" value="DOŁĄCZ"/>
+        </div>
+    </div>
+  </section>
+
+  <section class="contactUs">
+    <div class="container">
+      <div class="contactFormContainer">
+        <div class="contact"><p>KONTAKT<p></div>
+        <div class="greenLine"></div>
+        <br>
+        <div class="contactForm">
+          <input id="name" type="text" placeholder="Imię"/>
+         <br><br>
+          <input id="email" type="email" placeholder="email"/>
+          <br><br>
+          <textarea id="message" cols="50"rows="5" placeholder="Wiadomość"></textarea>
+        </div>
+        </div>
+        <div class="sendButtonSection">
+        <img src="images/red_chair.png" id="redChair" alt="red chair">
+        <div class="agreement">
+          <img src="images/form_ok.jpg" id="checkbox" alt="checkbox">
+          <p class="agreementOk">Zgadzam się na przetwarzanie danych osobowych.</p>
+        </div>
+        <input type="submit" id="send" value="WYŚLIJ"/>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="copyrights">Copyright 2014 | All Rights Reserved. - Sit On Chair
+      </div>
+      <div class="socialMedia">
+        <img src="images/flickr.png" alt="flickr">
+        <img src="images/pinterest.png" alt="pinterest">
+        <img src="images/twitter.png" alt="twitter">
+        <img src="images/vimeo.png" alt="vimeo">
+      </div>
+      <div class="footerLogo">
+      <p>SIT <b>ON</b> CHAIR</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
